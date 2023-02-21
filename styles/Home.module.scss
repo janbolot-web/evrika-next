@@ -1,0 +1,105 @@
+.home {
+  color: #fff;
+  margin-top: 20px;
+  font-family: comfortaa;
+
+  &Block {
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 30px;
+    background: #201c29;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &Title {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: nunito;
+    line-height: 1.2;
+  }
+
+  &Img {
+    margin-bottom: 20px;
+  }
+
+  &Logo {
+    font-size: 26px;
+    text-align: center;
+    span {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 22px;
+      color: #34e89e;
+    }
+  }
+
+  &Img {
+    object-fit: contain;
+  }
+
+  &Down {
+    text-align: center;
+    position: relative;
+    i {
+      position: absolute;
+      left: 0;
+      right: 0;
+      animation: arrow 2s infinite;
+      animation-delay: -1.5s;
+      &:first-child {
+        animation-delay: -1s;
+        top: 8px;
+      }
+      &:last-child {
+        animation-delay: -0.5s;
+        top: 16px;
+      }
+    }
+  }
+
+  &Descr {
+    font-weight: 400;
+    color: #ffcc00;
+    font-family: Nunito;
+    font-size: 18px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    span {
+      font-size: 36px;
+      font-weight: 700;
+    }
+  }
+
+  @keyframes arrow {
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .arrows path.a1 {
+    -webkit-animation-delay: -1s; /* Safari 和 Chrome */
+  }
+
+  .arrows path.a2 {
+    -webkit-animation-delay: -0.5s; /* Safari 和 Chrome */
+  }
+
+  .arrows path.a3 {
+    -webkit-animation-delay: 0s; /* Safari 和 Chrome */
+  }
+}
