@@ -19,7 +19,7 @@ export default function Home() {
           <h1 className={style.homeLogo}>
 
             <span>Alippe pro</span>
-            Билим берүү <br /> аянтчасы TEST
+            Билим берүү <br /> аянтчасы 
           </h1>
           <div className={style.homeBlock}>
             <Image width={230} height={230} src="/../public/mainImg2.png" alt="" className={style.homeImg} />
@@ -31,6 +31,7 @@ export default function Home() {
               Учурдун талабына жооп берген билим берүү аянтчасы
             </h2>
           </div>
+          
           <div className={style.homeDown}>
             <i>
               <BsChevronCompactDown size={32} />

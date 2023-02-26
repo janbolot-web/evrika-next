@@ -18,7 +18,7 @@ const Header = () => {
           </Link>
         </li>
         <li className={style.headerItem}>
-          <Link href={'/'} className={style.headerLink}>
+          <Link href={'/courses'} className={style.headerLink}>
             <BsBook size={24} />
             <span>Курстар</span>
 
