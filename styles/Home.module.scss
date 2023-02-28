@@ -9,7 +9,6 @@
     margin-top: 40px;
     padding: 30px;
     border-radius: 30px;
-    background: #201c29;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,10 +17,12 @@
   }
 
   &Title {
-    font-size: 18px;
-    font-weight: 400;
-    font-family: nunito;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 500;
     line-height: 1.2;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
   &Img {
@@ -31,9 +32,13 @@
   &Logo {
     font-size: 26px;
     text-align: center;
+    line-height: 1;
+    font-family: nunito;
+    font-weight: 400;
     span {
+      font-weight: 700;
       display: block;
-      margin-bottom: 5px;
+      margin-bottom: 10px;
       font-size: 22px;
       color: #34e89e;
     }

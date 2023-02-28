@@ -1,0 +1,115 @@
+.iconCards {
+  position: relative;
+  width: 60vw;
+  height: 40vw;
+  max-width: 380px;
+  max-height: 250px;
+  margin: 0;
+  color: white;
+  perspective: 1000px;
+  transform-origin: center;
+
+  &Content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: translateZ(-30vw) rotateY(0);
+    animation: carousel 20s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+
+    &.stepAnimation {
+      animation: carousel 18s infinite steps(1) forwards;
+    }
+  }
+
+  &Item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 60vw;
+    height: 40vw;
+    max-width: 380px;
+    max-height: 250px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    transform-origin: center;
+
+    &:nth-child(1) {
+      background: url('https://assets-global.website-files.com/5e39e095596498a8b9624af1/5ffca6e3e0d8ad9231cc2af6_Portfolio-course---final.png');
+      background-position: center;
+      background-size: cover;
+      transform: rotateY(0) translateZ(35vw);
+    }
+
+    &:nth-child(2) {
+      background: url('https://blog-frontend.envato.com/cdn-cgi/image/width=1200,quality=85,format=auto/uploads/2020/06/SOC101_Portfolio_Guide.png');
+      background-position: center;
+      background-size: cover;  
+      transform: rotateY(120deg) translateZ(35vw);
+    }
+
+    &:nth-child(3) {
+      background: url('https://bsmraau.edu.bd/public/storage/upload/content/220613042644-2651List-of-Courses-after-10th-Standard.jpg');
+      background-position: center;
+      background-size: cover;
+      transform: rotateY(240deg) translateZ(35vw);
+    }
+  }
+}
+
+@keyframes carousel {
+  0%,
+  17.5% {
+    transform: translateZ(-35vw) rotateY(0);
+  }
+  27.5%,
+  45% {
+    transform: translateZ(-35vw) rotateY(-120deg);
+  }
+  55%,
+  72.5% {
+    transform: translateZ(-35vw) rotateY(-240deg);
+  }
+  82.5%,
+  100% {
+    transform: translateZ(-35vw) rotateY(-360deg);
+  }
+}
+
+// Demo only
+// ----------------------------------------------
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+@keyframes jelly {
+  from {
+    transform: scale(1, 1);
+  }
+  30% {
+    transform: scale(1.25, 0.75);
+  }
+  40% {
+    transform: scale(0.75, 1.25);
+  }
+  50% {
+    transform: scale(1.15, 0.85);
+  }
+  65% {
+    transform: scale(0.95, 1.05);
+  }
+  75% {
+    transform: scale(1.05, 0.95);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}

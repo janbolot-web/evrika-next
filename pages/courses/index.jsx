@@ -1,10 +1,18 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import React from 'react'
 import Layout from '../../components/Layout'
 
 import style from './courses.module.scss'
 
 const Courses = () => {
+  const navigate = useRouter()
+  const toNavigate = () => {
+    setTimeout(() => {
+      navigate.push('/course/1');
+    }, 800);
+  }
+
   return (
     <Layout>
       <div className={style.courses}>
@@ -14,7 +22,7 @@ const Courses = () => {
           </h1>
           <div className={style.coursesList}>
             <div className={style.coursesItem}>
-              <Link href="#" className={style.coursesLink}>
+              <div onClick={toNavigate} className={style.coursesLink}>
                 <div className={style.coursesBg}></div>
 
                 <div className={style.coursesItemTitle}>
@@ -22,7 +30,7 @@ const Courses = () => {
                 </div>
 
 
-              </Link>
+              </div>
             </div>
           </div>
         </div>

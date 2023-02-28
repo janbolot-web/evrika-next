@@ -5,6 +5,7 @@ import { BsChevronCompactDown } from "react-icons/bs";
 
 import style from "../styles/Home.module.scss";
 import Layout from "../components/Layout";
+import Carousel from "../components/Carousel";
 
 
 export default function Home() {
@@ -21,7 +22,7 @@ export default function Home() {
             <span>Alippe pro</span>
             Билим берүү <br /> аянтчасы 
           </h1>
-          <div className={style.homeBlock}>
+          {/* <div className={style.homeBlock}>
             <Image width={230} height={230} src="/../public/mainImg2.png" alt="" className={style.homeImg} />
             <p className={style.homeDescr}>
               <span>150+</span> <br />
@@ -30,8 +31,12 @@ export default function Home() {
             <h2 className={style.homeTitle}>
               Учурдун талабына жооп берген билим берүү аянтчасы
             </h2>
-          </div>
-          
+          </div> */}
+          <Carousel/>
+
+          <h2 className={style.homeTitle}>
+          Биз билимди дүйнө менен бөлүшөбүз
+          </h2>
           <div className={style.homeDown}>
             <i>
               <BsChevronCompactDown size={32} />
@@ -48,3 +53,4 @@ export default function Home() {
     </Layout>
   );
 }
+
