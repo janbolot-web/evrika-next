@@ -2,6 +2,8 @@ import Image from 'next/image'
 import React from 'react'
 import style from './carousel.module.scss'
 
+import slide1 from '../../public/slide1.png'
+
 const Carousel = () => {
 
   // function classToggle() {
@@ -15,10 +17,15 @@ const Carousel = () => {
     <div className={style.carousel}>
       <figure className={style.iconCards}>
         <div className={style.iconCardsContent}>
-          <div className={style.iconCardsItem}><span className={style.h1}>
-          </span></div>
-          <div className={style.iconCardsItem}><span className={style.h1}></span></div>
-          <div className={style.iconCardsItem}><span className={style.h1}></span></div>
+          <div className={style.iconCardsItem}>
+            <Image src={slide1} sizes={'100%'} fill  loading="lazy" className={style.carouselImg}  alt={''} />
+          </div>
+          <div className={style.iconCardsItem}>
+            <Image src={slide1} sizes={'100%'} fill  loading="lazy" className={style.carouselImg}  alt={''} />
+          </div>
+          <div className={style.iconCardsItem}>
+            <Image src={slide1} sizes={'100%'} fill  loading="lazy" className={style.carouselImg}  alt={''} />
+          </div>
         </div>
       </figure>
     </div>

@@ -12,7 +12,6 @@
     -ms-flex-preferred-size: calc(33.33333% - 30px);
     flex-basis: calc(33.33333% - 30px);
     max-width: 500px;
-    margin: 0 15px 30px;
     overflow: hidden;
 
     border-radius: 28px;
@@ -35,13 +34,17 @@
         -ms-transform: scale(10);
         transform: scale(10);
       }
+
+      .coursesDuration {
+        color: #fff;
+      }
     }
   }
 
   &Bg {
     height: 128px;
     width: 128px;
-    background-color: #f9b234;
+    background-color: orange;
 
     z-index: 1;
     position: absolute;
@@ -56,18 +59,55 @@
   }
 
   &ItemTitle {
-    min-height: 87px;
-    margin: 0 0 25px;
     font-family: Comfortaa;
-
     overflow: hidden;
-
     font-weight: bold;
     font-size: 22px;
     color: #fff;
 
     z-index: 2;
     position: relative;
+  }
+
+  &Content {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &Left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &Btn {
+    width: 130px;
+    border: 2px solid orange;
+    background: transparent;
+    outline: none;
+    color: orange;
+    font-size: 16px;
+    margin-top: 40px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    z-index: 2;
+    font-family: Comfortaa;
+    font-weight: 700;
+  }
+
+  &Duration {
+    color: orange;
+    font-weight: 600;
+    z-index: 2;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.8s ease-in-out;
+  }
+
+  &Img {
+    z-index: 2;
   }
 }
 

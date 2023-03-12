@@ -38,21 +38,21 @@
     transform-origin: center;
 
     &:nth-child(1) {
-      background: url('https://assets-global.website-files.com/5e39e095596498a8b9624af1/5ffca6e3e0d8ad9231cc2af6_Portfolio-course---final.png');
+      // background: url('https://assets-global.website-files.com/5e39e095596498a8b9624af1/5ffca6e3e0d8ad9231cc2af6_Portfolio-course---final.png');
       background-position: center;
       background-size: cover;
       transform: rotateY(0) translateZ(35vw);
     }
 
     &:nth-child(2) {
-      background: url('https://blog-frontend.envato.com/cdn-cgi/image/width=1200,quality=85,format=auto/uploads/2020/06/SOC101_Portfolio_Guide.png');
+      // background: url('https://blog-frontend.envato.com/cdn-cgi/image/width=1200,quality=85,format=auto/uploads/2020/06/SOC101_Portfolio_Guide.png');
       background-position: center;
       background-size: cover;  
       transform: rotateY(120deg) translateZ(35vw);
     }
 
     &:nth-child(3) {
-      background: url('https://bsmraau.edu.bd/public/storage/upload/content/220613042644-2651List-of-Courses-after-10th-Standard.jpg');
+      // background: url('https://bsmraau.edu.bd/public/storage/upload/content/220613042644-2651List-of-Courses-after-10th-Standard.jpg');
       background-position: center;
       background-size: cover;
       transform: rotateY(240deg) translateZ(35vw);
@@ -88,6 +88,12 @@
   justify-content: center;
   flex-direction: column;
   margin-top: 50px;
+
+  &Img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
 }
 
 @keyframes jelly {
