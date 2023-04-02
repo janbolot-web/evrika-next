@@ -12,6 +12,7 @@ export default function Document() {
           href="https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
           rel="stylesheet"
         />
+        
       </Head>
       <body>
         <Main />
@@ -21,6 +22,7 @@ export default function Document() {
           <div id="stars2"></div>
           <div id="stars3"></div>
         </div>
+        
       </body>
     </Html>
   );
