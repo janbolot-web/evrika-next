@@ -26,7 +26,7 @@ const Header = () => {
         </li>
 
         <li className={style.headerItem}>
-          <Link href={'/'} className={style.headerLink}>
+          <Link href={'/reviews'} className={style.headerLink}>
             <BiMessageSquareDetail size={24} />
             <span>Ой пикирлер </span>
 
@@ -34,7 +34,7 @@ const Header = () => {
         </li>
 
         <li className={style.headerItem}>
-          <Link href={'/'} className={style.headerLink}>
+          <Link href={'/reviews'} className={style.headerLink}>
             <BiUser size={24} />
             <span>Жеке кабинет</span>
 

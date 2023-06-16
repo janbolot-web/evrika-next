@@ -22,11 +22,14 @@ const Course = () => {
           </div>
           <div className={style.courseBlock}>
             <div className={style.courseVideo}>
-              <iframe src="https://player.vdocipher.com/v2/?otp=20160313versASE323qqQCclDEYAGkBsgLVn8Qvk8Ngz6833zzu270q8hqSX7xPk&playbackInfo=eyJ2aWRlb0lkIjoiNWE0ZmU2YWZhYzBkNGJjOWFmY2YwNWQ5ZDY2MWRjNzcifQ==" allowFullScreen="true" allow="encrypted-media"></iframe>
+              <iframe src="https://rutube.ru/play/embed/6b4b5aefa96810680adbfe937c332552" allowFullScreen="true" allow="encrypted-media"></iframe>
             </div>
 
-            <button className={style.courseBtn}>
-              Сатып алуу </button>
+            <div className={style.courseBottom}>
+              <button className={style.courseBtn}>
+                Сатып алуу </button>
+              <span>20 000 сом</span>
+            </div>
           </div>
           <div className={style.courseDescr}>
             <span>Курс тууралуу маалымат: </span> <br /><br />

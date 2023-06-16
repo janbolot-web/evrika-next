@@ -2,7 +2,9 @@ import Image from 'next/image'
 import React from 'react'
 import style from './carousel.module.scss'
 
-import slide1 from '../../public/slide1.png'
+import slide1 from '../../public/course1.jpg'
+import slide2 from '../../public/course2.jpg'
+import slide3 from '../../public/course3.png'
 
 const Carousel = () => {
 
@@ -21,10 +23,10 @@ const Carousel = () => {
             <Image src={slide1} sizes={'100%'} fill  loading="lazy" className={style.carouselImg}  alt={''} />
           </div>
           <div className={style.iconCardsItem}>
-            <Image src={slide1} sizes={'100%'} fill  loading="lazy" className={style.carouselImg}  alt={''} />
+            <Image src={slide2} sizes={'100%'} fill  loading="lazy" className={style.carouselImg}  alt={''} />
           </div>
           <div className={style.iconCardsItem}>
-            <Image src={slide1} sizes={'100%'} fill  loading="lazy" className={style.carouselImg}  alt={''} />
+            <Image src={slide3} sizes={'100%'} fill  loading="lazy" className={style.carouselImg}  alt={''} />
           </div>
         </div>
       </figure>
